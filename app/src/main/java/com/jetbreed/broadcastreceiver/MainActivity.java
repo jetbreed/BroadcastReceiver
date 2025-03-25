@@ -12,12 +12,16 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    AirplaneModeChangeReceiver airplaneModeChangeReceiver = new AirplaneModeChangeReceiver();
+    AirplaneModeChangeReceiver airplaneModeChangeReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        airplaneModeChangeReceiver =
+                new AirplaneModeChangeReceiver();
+
     }
 
     @Override
