@@ -13,7 +13,7 @@ public class AirplaneModeChangeReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Handler handler = new Handler(Looper.getMainLooper());  // Use Looper.getMainLooper() for main thread
-        long delayMillis = 10000; // Delay in milliseconds (e.g., 2000ms = 2 seconds)
+        long delayMillis = 10; // Delay in milliseconds (e.g., 2000ms = 2 seconds)
 
         handler.postDelayed(new Runnable() {
             @Override
